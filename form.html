@@ -12,7 +12,7 @@
 
           <div class="form-group">
             <label class="font-weight-bold" for="formGroupExampleInput">Full Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Full Name">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Full Name" required="true">
           </div>
 
           <div class="form-group">
@@ -31,7 +31,7 @@
                   <label class="font-weight-bold" for="studentStatus">Student Status</label>
 
                   <select class="form-control">
-                    <option>Select Status</option>
+                    <option value="" selected disabled>Select Status</option>
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -45,12 +45,13 @@
 
         <div class="form-group">
           <label class="font-weight-bold" for="exampleFormControlTextarea1">About Me </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder = "Tell us about who you are and what your interests are!" rows="3"></textarea>
         </div>
 
         <div class="form-group row">
           <div class="form-group col">
             <label class="font-weight-bold" for="exampleInputEmail1">Select Programming Languages</label>
+            <br>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">Python</label>
@@ -91,8 +92,8 @@
         <label class="font-weight-bold" for="login">Login to Finish Submitting</label>
         <br>
         <div class="form-inline">
-  		    <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username (Email)">
-  		    <input type="password" class="form-control" id="password" placeholder="Password">
+  		    <input type="email" class="form-control" id="username" required="true" aria-describedby="emailHelp" placeholder="Username (Email)">
+  		    <input type="password" class="form-control" id="password" required="true" placeholder="Password">
   		  </div>
       </div>
 
@@ -103,6 +104,7 @@
       <br>
       <br>
 		  <button type="submit" class="btn btn-primary">Submit</button>
+      
 		</form>
   </div>
 
